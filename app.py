@@ -25,7 +25,7 @@ class ImageClassifierApp(tk.Tk):
         # Set background image to fit the whole screen
         screen_width = self.winfo_screenwidth()
         screen_height = self.winfo_screenheight()
-        self.bg_image = Image.open("D:/Leukemia/static/ex.jpg")
+        self.bg_image = Image.open("D:/Leukemia/static/background.jpg")  #Background image
         self.bg_photo = ImageTk.PhotoImage(self.bg_image.resize((screen_width, screen_height)))
         self.bg_label = tk.Label(self, image=self.bg_photo)
         self.bg_label.place(x=0, y=0, relwidth=1, relheight=1)
